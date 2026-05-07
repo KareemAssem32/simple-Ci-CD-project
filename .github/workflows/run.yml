@@ -1,0 +1,14 @@
+name: run script
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: run_sh
+        run: ./script.sh
