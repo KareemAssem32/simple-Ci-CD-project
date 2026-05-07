@@ -11,4 +11,9 @@ jobs:
 
     steps:
       - name: run_sh
-        run: ./script.sh
+        run: |
+         chmod +x script.sh
+         ./script.sh
+         
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
